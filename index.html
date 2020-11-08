@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Professor Layton - Bickering Brothers</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ntnuerc.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script src="https://daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+		
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script src="js/ntnu.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+        <div class="slides">
+            
+<section id="start" data-state="start">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Professor Layton - Bickering Brothers</h1>
+
+<p>
+      Jacky Baltes<br>
+      National Taiwan Normal University<br>
+      Taipei, Taiwan<br>
+      <a href="mailto:jacky.baltes@ntnu.edu.tw">jacky.baltes@ntnu.edu.tw</a><br>
+</p>
+
+<class 'datetime.date'>
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-90c21615-346b-4d30-bba5-6d462c72fbba" ><span id="id-90c21615-346b-4d30-bba5-6d462c72fbba"><img id="img-id-90c21615-346b-4d30-bba5-6d462c72fbba"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-bafd3b5d-e260-461c-9bf6-4a9eaa30d8be" ><span id="id-bafd3b5d-e260-461c-9bf6-4a9eaa30d8be"><img id="img-id-bafd3b5d-e260-461c-9bf6-4a9eaa30d8be" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00003_frag_00001" data-state="slide_00003_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Puzzle Description</h1>
+
+<div class="jb-text">
+<ul>
+<li>The puzzle is taken from the game <a href="https://layton.fandom.com/wiki/Puzzle:Bickering_Brothers">Professor Layton and the Curious Village</a></li>
+<li>
+<blockquote>
+Six brother have gathered around a table to eat dinner. Let's call them brothers 1 to 6, with 1 being the eldest and 6 the youngest.
+
+Each of the brothers is prone to fighting with the siblings directly above and below him in age and can't be seated next to either of them. Also, brothers 3 and 5 got into an argument the other day and refuse to sit next to each other.
+
+Brother 1 has already sat down. Can you find a seating arrangement for the others that will keep everyone from bickering?
+</blockquote>
+</li>
+</ul>
+</div>
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-60ccfd8b-17b4-46de-8e52-a7d987608575" ><span id="id-60ccfd8b-17b4-46de-8e52-a7d987608575"><img id="img-id-60ccfd8b-17b4-46de-8e52-a7d987608575"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-7fa9adbe-7271-43eb-b9d5-b4dd6a7bba0b" ><span id="id-7fa9adbe-7271-43eb-b9d5-b4dd6a7bba0b"><img id="img-id-7fa9adbe-7271-43eb-b9d5-b4dd6a7bba0b" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00004_frag_00001" data-state="slide_00004_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Program Development</h1>
+
+<div class="jb-text">
+<ul>
+<li>First consider the data structures that you want to use in your program</li>
+<li>Then add the code to manipulate the data structures</li>
+<li>Good datastructures make it easy to write the code</li>
+<li>In this puzzle, I would use a 6 element array where each position is one of the chairs</li>
+</ul>
+</div>
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-d4443743-dad9-40ff-b3a9-9b93de666c14" ><span id="id-d4443743-dad9-40ff-b3a9-9b93de666c14"><img id="img-id-d4443743-dad9-40ff-b3a9-9b93de666c14"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-ccb1109f-9553-4716-993e-d132ed22e346" ><span id="id-ccb1109f-9553-4716-993e-d132ed22e346"><img id="img-id-ccb1109f-9553-4716-993e-d132ed22e346" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00005_frag_00001" data-state="slide_00005_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">is_valid</span>( table ):
+  <span style="color: #008000; font-weight: bold">for</span> bi <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(table)):
+    pi <span style="color: #666666">=</span> ( bi <span style="color: #666666">-</span> <span style="color: #666666">1</span> <span style="color: #666666">+</span> <span style="color: #008000">len</span>(table) ) <span style="color: #666666">%</span> <span style="color: #008000">len</span>(table) 
+    ni <span style="color: #666666">=</span> ( bi <span style="color: #666666">+</span> <span style="color: #666666">1</span> ) <span style="color: #666666">%</span> <span style="color: #008000">len</span>(table)
+
+    b <span style="color: #666666">=</span> table[bi]    
+    nb <span style="color: #666666">=</span> b <span style="color: #666666">+</span> <span style="color: #666666">1</span>
+    pb <span style="color: #666666">=</span> b <span style="color: #666666">-</span> <span style="color: #666666">1</span>
+
+    <span style="color: #008000; font-weight: bold">if</span> ( table[pi] <span style="color: #AA22FF; font-weight: bold">in</span> [ nb, pb] ) <span style="color: #AA22FF; font-weight: bold">or</span> ( table[ni] <span style="color: #AA22FF; font-weight: bold">in</span> [ nb, pb] ):
+      <span style="color: #408080; font-style: italic">#print(&quot;Failed&quot;, table, pi, bi, ni, nb, b, pb, table[pi], table[ni] )</span>
+      <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000; font-weight: bold">False</span>
+    <span style="color: #008000; font-weight: bold">if</span> b <span style="color: #666666">==</span> <span style="color: #666666">3</span> <span style="color: #AA22FF; font-weight: bold">or</span> b <span style="color: #666666">==</span> <span style="color: #666666">5</span>:
+      <span style="color: #008000; font-weight: bold">if</span> ( table[pi] <span style="color: #AA22FF; font-weight: bold">in</span> [ <span style="color: #666666">3</span>, <span style="color: #666666">5</span>] ) <span style="color: #AA22FF; font-weight: bold">or</span> ( table[ni] <span style="color: #AA22FF; font-weight: bold">in</span> [ <span style="color: #666666">3</span>, <span style="color: #666666">5</span>] ):
+        <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000; font-weight: bold">False</span>
+
+  <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000; font-weight: bold">True</span>
+
+N_BROTHERS <span style="color: #666666">=</span> <span style="color: #666666">6</span>
+</pre></div>
+
+</div><!-- end of jb-input-code jb-render -->
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-80a0d4fe-dd08-4b3f-b5e1-a28a7f7027b9" ><span id="id-80a0d4fe-dd08-4b3f-b5e1-a28a7f7027b9"><img id="img-id-80a0d4fe-dd08-4b3f-b5e1-a28a7f7027b9"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-f8557125-6776-44c7-aef2-abee2217f87e" ><span id="id-f8557125-6776-44c7-aef2-abee2217f87e"><img id="img-id-f8557125-6776-44c7-aef2-abee2217f87e" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00006_frag_00001" data-state="slide_00006_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">all_permutations</span>( lst, level <span style="color: #666666">=</span> <span style="color: #666666">0</span> ):
+  <span style="color: #408080; font-style: italic">#print(&quot;  &quot; * level, f&#39;all_permutations({lst})&#39;)</span>
+  <span style="color: #008000; font-weight: bold">if</span> lst <span style="color: #666666">==</span> []:
+    <span style="color: #408080; font-style: italic">#print(&quot;  &quot; * level, f&#39;all_permutations({lst}) ==&gt; []&#39;)</span>
+    <span style="color: #008000; font-weight: bold">return</span> []
+  <span style="color: #008000; font-weight: bold">else</span>:
+    perms <span style="color: #666666">=</span> []
+    <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(lst)):
+      rem <span style="color: #666666">=</span> all_permutations( lst[<span style="color: #666666">0</span>:i] <span style="color: #666666">+</span> lst[i<span style="color: #666666">+1</span>:], level <span style="color: #666666">+</span> <span style="color: #666666">1</span> )
+      <span style="color: #008000; font-weight: bold">if</span> <span style="color: #008000">len</span>(rem) <span style="color: #666666">&gt;</span> <span style="color: #666666">0</span>:
+        res <span style="color: #666666">=</span> [ [ lst[i] ] <span style="color: #666666">+</span> r <span style="color: #008000; font-weight: bold">for</span> r <span style="color: #AA22FF; font-weight: bold">in</span> rem ] 
+        <span style="color: #408080; font-style: italic">#print(&quot;  &quot; * level, f&#39;all_permutations({lst}) ==&gt;{res}&#39;)</span>
+        perms <span style="color: #666666">=</span> perms <span style="color: #666666">+</span> res
+      <span style="color: #008000; font-weight: bold">else</span>:
+        <span style="color: #408080; font-style: italic">#print(&quot;  &quot; * level, f&#39;all_permutations({lst}) ==&gt;{[lst[i]]}&#39;)</span>
+        perms<span style="color: #666666">.</span>append( [ lst[i] ] )
+    <span style="color: #008000; font-weight: bold">return</span> perms
+
+N_BROTHERS <span style="color: #666666">=</span> <span style="color: #666666">6</span>
+
+possible <span style="color: #666666">=</span> all_permutations([ x <span style="color: #008000; font-weight: bold">for</span> x <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">1</span>,N_BROTHERS<span style="color: #666666">+1</span>)])
+<span style="color: #008000; font-weight: bold">for</span> p <span style="color: #AA22FF; font-weight: bold">in</span> possible:
+  <span style="color: #008000; font-weight: bold">if</span> is_valid(p):
+    <span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;Found solution&quot;</span>, p )
+    
+</pre></div>
+
+</div><!-- end of jb-input-code jb-render -->
+
+</div>
+<div class="jb-print jb-render">
+<div class="jb-output jb-render code" style="text-align:center">
+<div class="jb-stdout code" style="display:inline-block; width:90%">
+<pre >
+Found solution [1, 3, 6, 4, 2, 5]
+Found solution [1, 5, 2, 4, 6, 3]
+Found solution [2, 4, 6, 3, 1, 5]
+Found solution [2, 5, 1, 3, 6, 4]
+Found solution [3, 1, 5, 2, 4, 6]
+Found solution [3, 6, 4, 2, 5, 1]
+Found solution [4, 2, 5, 1, 3, 6]
+Found solution [4, 6, 3, 1, 5, 2]
+Found solution [5, 1, 3, 6, 4, 2]
+Found solution [5, 2, 4, 6, 3, 1]
+Found solution [6, 3, 1, 5, 2, 4]
+Found solution [6, 4, 2, 5, 1, 3]
+</pre>
+</div>
+</div>
+
+</div><!-- end of jb-print jb-render -->
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-14c2466f-0cfa-4c1b-9543-89adbe233b9b" ><span id="id-14c2466f-0cfa-4c1b-9543-89adbe233b9b"><img id="img-id-14c2466f-0cfa-4c1b-9543-89adbe233b9b"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-368fd29c-22b8-469b-989a-c763aacaf1ec" ><span id="id-368fd29c-22b8-469b-989a-c763aacaf1ec"><img id="img-id-368fd29c-22b8-469b-989a-c763aacaf1ec" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00007_frag_00001" data-state="slide_00007_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">math</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">random</span>
+
+
+xs <span style="color: #666666">=</span> np<span style="color: #666666">.</span>arange(<span style="color: #666666">20</span>)
+ys <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros(<span style="color: #008000">len</span>(xs))
+
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(xs)):
+  ys[i] <span style="color: #666666">=</span> math<span style="color: #666666">.</span>factorial( xs[i] )
+
+fig <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>figure(dpi<span style="color: #666666">=300</span>)
+ax1 <span style="color: #666666">=</span> fig<span style="color: #666666">.</span>add_subplot(<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">1</span>)
+
+ax1<span style="color: #666666">.</span>plot(xs, ys, linewidth<span style="color: #666666">=3</span>)
+
+ax2 <span style="color: #666666">=</span> fig<span style="color: #666666">.</span>add_subplot(<span style="color: #666666">1</span>,<span style="color: #666666">2</span>,<span style="color: #666666">2</span>)
+ax2<span style="color: #666666">.</span>set_yscale(<span style="color: #BA2121">&quot;log&quot;</span>)
+ax2<span style="color: #666666">.</span>plot( xs, ys, linewidth<span style="color: #666666">=3</span>)
+
+fact1 <span style="color: #666666">=</span> addJBFigure(<span style="color: #BA2121">&quot;fact1&quot;</span>, <span style="color: #666666">0</span>, <span style="color: #666666">0</span>, fig )
+
+plt<span style="color: #666666">.</span>close()
+</pre></div>
+
+</div><!-- end of jb-input-code jb-render -->
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-d8a51840-35ea-4816-acf9-d7d1b1c4ad63" ><span id="id-d8a51840-35ea-4816-acf9-d7d1b1c4ad63"><img id="img-id-d8a51840-35ea-4816-acf9-d7d1b1c4ad63"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-d41a3a98-84ce-4bbb-adc3-521d24b9e707" ><span id="id-d41a3a98-84ce-4bbb-adc3-521d24b9e707"><img id="img-id-d41a3a98-84ce-4bbb-adc3-521d24b9e707" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00008_frag_00001" data-state="slide_00008_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Exponential Complexity</h1>
+
+<div class="jb-text">
+<ul>
+<li>Graph shows the number of permutations as the length of the list increases</li>
+<li> <span id="id-1d50fcc8-6d98-4525-a389-d583241f4c37" ><span id="id-1d50fcc8-6d98-4525-a389-d583241f4c37"><img id="img-id-1d50fcc8-6d98-4525-a389-d583241f4c37"     src="assets/images/fact1.svg"/></span>
+</span>
+
+<li>Vast majority of AI problems have this kind of runtime behviour</li>
+<li>Runtime grows extremely fast as problems become larger</li>
+<li>Astronomically large</li>
+</ul>
+</div>
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-56395960-6b86-4773-a013-120fd457c1c8" ><span id="id-56395960-6b86-4773-a013-120fd457c1c8"><img id="img-id-56395960-6b86-4773-a013-120fd457c1c8"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-2179d5f6-5bb7-4450-a612-b69f531c950b" ><span id="id-2179d5f6-5bb7-4450-a612-b69f531c950b"><img id="img-id-2179d5f6-5bb7-4450-a612-b69f531c950b" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+        </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',  // See http://docs.mathjax.org/en/latest/config-files.html
+                    // tex2jax: {
+                    //     inlineMath: [['$', '$'], ['\(', '\)']],
+                    //     displayMath: [['$$', '$$'], ['\[', '\]']],
+                    //     processEscapes: true,
+                    //     processEnvironments: true,
+                    //     skipTags: ['script', 'noscript', 'style', 'textarea', 'code', 'pre'],
+                    //     displayAlign: 'center',
+                    // }                
+                },
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+        </script>
+
+        <script>
+            <!-- Assets -->
+var assets = {
+"robbi" : new JBImage( "robbi", "12677", "162", "138", null, null, "assets/images/robbi", "png" ),
+"logo" : new JBImage( "logo", "12033", "0", "0", null, null, "assets/images/logo", "png" ),
+"fira-logo-1" : new JBImage( "fira-logo-1", "93836", "0", "0", null, null, "assets/images/FIRA-logo-1", "png" ),
+"pairLogo" : new JBImage( "pairLogo", "63051", "0", "0", null, null, "assets/images/pairLogo", "png" ),
+"fact1" : new JBImage( "fact1", "21734", "0", "0", null, null, "assets/images/fact1", "svg" ) 
+};
+var assetInstances = {
+    "id-bafd3b5d-e260-461c-9bf6-4a9eaa30d8be": assets["robbi"],
+    "id-7fa9adbe-7271-43eb-b9d5-b4dd6a7bba0b": assets["robbi"],
+    "id-ccb1109f-9553-4716-993e-d132ed22e346": assets["robbi"],
+    "id-f8557125-6776-44c7-aef2-abee2217f87e": assets["robbi"],
+    "id-368fd29c-22b8-469b-989a-c763aacaf1ec": assets["robbi"],
+    "id-d41a3a98-84ce-4bbb-adc3-521d24b9e707": assets["robbi"],
+    "id-2179d5f6-5bb7-4450-a612-b69f531c950b": assets["robbi"],
+    "id-90c21615-346b-4d30-bba5-6d462c72fbba": assets["logo"],
+    "id-60ccfd8b-17b4-46de-8e52-a7d987608575": assets["logo"],
+    "id-d4443743-dad9-40ff-b3a9-9b93de666c14": assets["logo"],
+    "id-80a0d4fe-dd08-4b3f-b5e1-a28a7f7027b9": assets["logo"],
+    "id-14c2466f-0cfa-4c1b-9543-89adbe233b9b": assets["logo"],
+    "id-d8a51840-35ea-4816-acf9-d7d1b1c4ad63": assets["logo"],
+    "id-56395960-6b86-4773-a013-120fd457c1c8": assets["logo"],
+    "id-1d50fcc8-6d98-4525-a389-d583241f4c37": assets["fact1"]
+};
+<!-- End of Assets -->
+
+            convertURLs(assetInstances, "smart-path");
+        </script>
+        <script>
+            <!-- Characters -->
+var characters =
+{};
+<!-- End of Characters -->
+
+        </script>
+    </body>
+</html>
